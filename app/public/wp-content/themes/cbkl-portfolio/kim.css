@@ -1,0 +1,627 @@
+
+/* =====================================================
+   KIMBERLY LAGAT PROFILE PAGE
+   Technical Writer Portfolio
+   Color Theme: Lavender, Purple, White and Navy
+===================================================== */
+
+.kimberly-profile-page {
+    --kim-primary: #8064c9;
+    --kim-primary-dark: #6346a8;
+    --kim-light: #f3efff;
+    --kim-lighter: #faf8ff;
+    --kim-dark: #24213b;
+    --kim-text: #66647a;
+    --kim-white: #ffffff;
+
+    width: 100%;
+    overflow: hidden;
+    background: var(--kim-white);
+    color: var(--kim-dark);
+    font-family: inherit;
+}
+
+.kimberly-profile-page * {
+    box-sizing: border-box;
+}
+
+.kimberly-profile-page section {
+    padding: 100px 8%;
+}
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.kimberly-hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+        radial-gradient(circle at 85% 20%, #e8ddff 0, transparent 32%),
+        linear-gradient(135deg, #faf8ff 0%, #f0eaff 55%, #ffffff 100%);
+}
+
+.kimberly-hero::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(128, 100, 201, 0.15);
+    border-radius: 50%;
+    right: -100px;
+    bottom: -150px;
+}
+
+.kimberly-hero-content {
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Profile Image */
+
+.kimberly-profile-image {
+    width: 100%;
+    max-width: 370px;
+    height: 440px;
+    margin: auto;
+    position: relative;
+}
+
+.kimberly-profile-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 18px;
+    left: 18px;
+    border: 3px solid var(--kim-primary);
+    border-radius: 180px 180px 25px 25px;
+}
+
+.kimberly-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 180px 180px 25px 25px;
+    box-shadow: 0 20px 45px rgba(75, 54, 130, 0.18);
+}
+
+/* Hero Text */
+
+.kimberly-intro {
+    max-width: 650px;
+}
+
+.kimberly-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--kim-primary);
+    margin-bottom: 22px;
+}
+
+.kimberly-intro h1 {
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.15;
+    font-weight: 800;
+    margin: 0 0 18px;
+    color: var(--kim-dark);
+}
+
+.kimberly-intro h1 span {
+    color: var(--kim-primary);
+}
+
+.kimberly-intro h2 {
+    font-size: 21px;
+    color: var(--kim-primary-dark);
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.kimberly-intro > p:not(.kimberly-label) {
+    color: var(--kim-text);
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 570px;
+    margin-bottom: 28px;
+}
+
+
+/* =====================================================
+   SOCIAL LINKS
+===================================================== */
+
+.kimberly-social-links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.kimberly-social-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--kim-white);
+    color: var(--kim-primary);
+    border: 1px solid #e7defc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.kimberly-social-icon:hover {
+    background: var(--kim-primary);
+    color: var(--kim-white);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(128, 100, 201, 0.25);
+}
+
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+.kimberly-section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.kimberly-section-heading p {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--kim-primary);
+    margin-bottom: 12px;
+}
+
+.kimberly-section-heading h2 {
+    font-size: clamp(30px, 4vw, 40px);
+    color: var(--kim-dark);
+    font-weight: 800;
+    margin: 0;
+}
+
+.kimberly-section-heading h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: var(--kim-primary);
+    border-radius: 10px;
+    margin: 18px auto 0;
+}
+
+
+/* =====================================================
+   ABOUT ME
+===================================================== */
+
+.kimberly-about {
+    background: var(--kim-white);
+}
+
+.kimberly-about-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 35px 40px;
+    background: var(--kim-lighter);
+    border-left: 5px solid var(--kim-primary);
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(75, 54, 130, 0.06);
+}
+
+.kimberly-about-content p {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--kim-text);
+    margin: 0 0 18px;
+}
+
+.kimberly-about-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   EDUCATION
+===================================================== */
+
+.kimberly-education {
+    background: var(--kim-lighter);
+}
+
+.kimberly-info-card {
+    max-width: 750px;
+    margin: auto;
+    padding: 35px;
+    text-align: center;
+    background: var(--kim-white);
+    border: 1px solid #eae3fa;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(75, 54, 130, 0.07);
+    transition: all 0.3s ease;
+}
+
+.kimberly-info-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(75, 54, 130, 0.12);
+}
+
+.kimberly-info-card h3 {
+    font-size: 23px;
+    color: var(--kim-primary-dark);
+    margin-bottom: 12px;
+}
+
+.kimberly-info-card p {
+    font-size: 16px;
+    color: var(--kim-text);
+    margin-bottom: 18px;
+}
+
+.kimberly-info-card span {
+    display: inline-block;
+    padding: 9px 22px;
+    background: var(--kim-light);
+    color: var(--kim-primary-dark);
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+
+/* =====================================================
+   TECHNICAL WRITING SKILLS
+===================================================== */
+
+.kimberly-skills {
+    background: var(--kim-white);
+}
+
+.kimberly-skills-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.kimberly-skill-card {
+    position: relative;
+    padding: 35px 28px;
+    background: var(--kim-lighter);
+    border: 1px solid #eee8fb;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.35s ease;
+}
+
+.kimberly-skill-card::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: var(--kim-primary);
+    border-radius: 10px;
+    margin: 0 auto 22px;
+}
+
+.kimberly-skill-card:hover {
+    transform: translateY(-9px);
+    background: var(--kim-white);
+    border-color: var(--kim-primary);
+    box-shadow: 0 15px 35px rgba(75, 54, 130, 0.10);
+}
+
+.kimberly-skill-card h3 {
+    font-size: 19px;
+    color: var(--kim-dark);
+    margin-bottom: 12px;
+}
+
+.kimberly-skill-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--kim-text);
+    margin: 0;
+}
+
+
+/* =====================================================
+   FEATURED PROJECTS
+===================================================== */
+
+.kimberly-projects {
+    background: var(--kim-lighter);
+}
+
+.kimberly-project-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.kimberly-project-card {
+    padding: 35px 30px;
+    background: var(--kim-white);
+    border-radius: 15px;
+    border-bottom: 4px solid var(--kim-primary);
+    box-shadow: 0 10px 30px rgba(75, 54, 130, 0.06);
+    transition: all 0.35s ease;
+}
+
+.kimberly-project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(75, 54, 130, 0.13);
+}
+
+.kimberly-project-card h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--kim-primary-dark);
+    margin-bottom: 16px;
+}
+
+.kimberly-project-card p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--kim-text);
+    margin: 0;
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.kimberly-contact {
+    text-align: center;
+    background: linear-gradient(135deg, #8064c9, #6346a8);
+    color: var(--kim-white);
+}
+
+.kimberly-contact h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    color: var(--kim-white);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.kimberly-contact p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.kimberly-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--kim-white);
+    color: var(--kim-primary-dark);
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.kimberly-button:hover {
+    background: var(--kim-dark);
+    color: var(--kim-white);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================================
+   SCROLL REVEAL ANIMATION
+===================================================== */
+
+.kimberly-profile-page .reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.kimberly-profile-page .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered skill cards */
+
+.kimberly-skill-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.kimberly-skill-card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.kimberly-skill-card:nth-child(4) {
+    transition-delay: 0.1s;
+}
+
+.kimberly-skill-card:nth-child(5) {
+    transition-delay: 0.2s;
+}
+
+.kimberly-project-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.kimberly-project-card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN - TABLETS
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .kimberly-profile-page section {
+        padding: 80px 6%;
+    }
+
+    .kimberly-hero-content {
+        gap: 45px;
+    }
+
+    .kimberly-profile-image {
+        max-width: 300px;
+        height: 380px;
+    }
+
+    .kimberly-skills-grid,
+    .kimberly-project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN - MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .kimberly-profile-page section {
+        padding: 65px 6%;
+    }
+
+    /* Hero */
+
+    .kimberly-hero {
+        min-height: auto;
+        padding-top: 65px !important;
+        padding-bottom: 75px !important;
+    }
+
+    .kimberly-hero-content {
+        grid-template-columns: 1fr;
+        gap: 55px;
+        text-align: center;
+    }
+
+    .kimberly-profile-image {
+        max-width: 245px;
+        height: 310px;
+    }
+
+    .kimberly-profile-image::before {
+        top: 12px;
+        left: 12px;
+    }
+
+    .kimberly-intro h1 {
+        font-size: 36px;
+    }
+
+    .kimberly-intro h2 {
+        font-size: 18px;
+    }
+
+    .kimberly-intro > p:not(.kimberly-label) {
+        font-size: 14px;
+    }
+
+    .kimberly-social-links {
+        justify-content: center;
+    }
+
+    /* Headings */
+
+    .kimberly-section-heading {
+        margin-bottom: 35px;
+    }
+
+    .kimberly-section-heading h2 {
+        font-size: 30px;
+    }
+
+    /* About */
+
+    .kimberly-about-content {
+        padding: 25px 22px;
+    }
+
+    .kimberly-about-content p {
+        font-size: 14px;
+    }
+
+    /* Education */
+
+    .kimberly-info-card {
+        padding: 28px 20px;
+    }
+
+    .kimberly-info-card h3 {
+        font-size: 20px;
+    }
+
+    /* Skills and Projects */
+
+    .kimberly-skills-grid,
+    .kimberly-project-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .kimberly-skill-card,
+    .kimberly-project-card {
+        padding: 28px 23px;
+    }
+
+    /* Contact */
+
+    .kimberly-contact h2 {
+        font-size: 29px;
+    }
+
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .kimberly-profile-page *,
+    .kimberly-profile-page *::before,
+    .kimberly-profile-page *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .kimberly-profile-page .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+}

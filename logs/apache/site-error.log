@@ -1,0 +1,4 @@
+[Mon Nov 09 11:45:03.870432 2026] [fcgid:warn] [pid 34776:tid 1260] [client 127.0.0.1:50661] mod_fcgid: read timeout from pipe, referer: http://cloudportfolio.local/wp-admin/
+[Mon Nov 09 11:45:03.871450 2026] [core:error] [pid 34776:tid 1260] [client 127.0.0.1:50661] End of script output before headers: admin-ajax.php, referer: http://cloudportfolio.local/wp-admin/
+[Tue Nov 10 08:10:25.293557 2026] [fcgid:warn] [pid 24880:tid 1268] [client 127.0.0.1:53316] mod_fcgid: read timeout from pipe, referer: http://cloudportfolio.local/wp-admin/
+[Tue Nov 10 08:10:25.293557 2026] [core:error] [pid 24880:tid 1268] [client 127.0.0.1:53316] End of script output before headers: admin-ajax.php, referer: http://cloudportfolio.local/wp-admin/
