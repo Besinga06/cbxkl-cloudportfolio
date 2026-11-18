@@ -142,7 +142,7 @@ get_header();
 
                     <div class="member-photo">
                         <img
-                            src="<?php echo esc_url(get_template_directory_uri() . '/images/inovation.png'); ?>"
+                            src="<?php echo esc_url(includes_url() . '/images/jorja.jpg'); ?>"
                             alt="Kimberly Lagat">
                     </div>
 

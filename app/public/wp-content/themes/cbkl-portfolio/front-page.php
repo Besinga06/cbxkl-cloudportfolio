@@ -107,7 +107,7 @@
 
                                 </svg>
 
-                                <img src="<?php echo esc_url(includes_url('images/inovation.png')); ?>"
+                                <img src="<?php echo esc_url(includes_url('images/jorja.jpg')); ?>"
                                     alt="Kimberly Lagat">
 
                             </div>

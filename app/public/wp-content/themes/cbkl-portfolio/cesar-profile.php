@@ -40,24 +40,46 @@ get_header();
 
                 <div class="cesar-social-links">
 
-                    <!-- Gmail -->
-                    <a href="mailto:YOUR_EMAIL@gmail.com"
-                        class="cesar-social-icon gmail-icon"
-                        aria-label="Send me an email"
-                        title="Email me">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/YOUR_USERNAME/"
+                        class="cesar-social-icon instagram-icon"
+                        aria-label="Visit my Instagram"
+                        title="Instagram"
+                        target="_blank"
+                        rel="noopener noreferrer">
 
                         <svg viewBox="0 0 24 24" width="25" height="25"
-                            fill="none" stroke="currentColor"
-                            stroke-width="1.8" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <rect x="3" y="5" width="18" height="14" rx="2" />
-                            <path d="m3 7 9 6 9-6" />
+                            fill="none">
+
+                            <defs>
+                                <linearGradient id="instagramGradient"
+                                    x1="0%" y1="100%" x2="100%" y2="0%">
+
+                                    <stop offset="0%" stop-color="#feda75" />
+                                    <stop offset="25%" stop-color="#fa7e1e" />
+                                    <stop offset="50%" stop-color="#d62976" />
+                                    <stop offset="75%" stop-color="#962fbf" />
+                                    <stop offset="100%" stop-color="#4f5bd5" />
+
+                                </linearGradient>
+                            </defs>
+
+                            <rect x="3" y="3" width="18" height="18" rx="5"
+                                stroke="url(#instagramGradient)"
+                                stroke-width="2" />
+
+                            <circle cx="12" cy="12" r="4"
+                                stroke="url(#instagramGradient)"
+                                stroke-width="2" />
+
+                            <circle cx="17.5" cy="6.5" r="1"
+                                fill="#d62976" />
+
                         </svg>
 
                     </a>
-
                     <!-- Facebook -->
-                    <a href="https://www.facebook.com/YOUR_USERNAME"
+                    <a href="https://www.facebook.com/cesar.besinga.6"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="cesar-social-icon facebook-icon"

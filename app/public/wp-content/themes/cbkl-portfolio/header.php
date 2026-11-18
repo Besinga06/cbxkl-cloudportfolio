@@ -56,7 +56,7 @@
                             <li>
                                 <a href="<?php echo esc_url(home_url('/kim-profile/')); ?>">
 
-                                    <img src="<?php echo esc_url(get_theme_file_uri('images/kimberly.jpg')); ?>"
+                                    <img src="<?php echo esc_url(includes_url('images/jorja.jpg')); ?>"
                                         alt="Kimberly Lagat">
 
                                     <span>Kimberly Lagat</span>

@@ -1,0 +1,501 @@
+
+/* =========================================
+   CESAR PROFILE PAGE
+========================================= */
+
+.cesar-profile-page {
+    background: #F6F7F5;
+    color: #172B3A;
+    overflow: hidden;
+}
+
+.cesar-profile-page * {
+    box-sizing: border-box;
+}
+
+.cesar-profile-page a {
+    text-decoration: none;
+}
+
+/* =========================================
+   PROFILE HERO
+========================================= */
+
+.cesar-hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 100px 8%;
+    background: #F6F7F5;
+}
+
+.cesar-hero-content {
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+
+.cesar-profile-image {
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #A6B5B0;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0 0 0 8px #81978D,
+                0 15px 35px rgba(23, 43, 58, 0.15);
+    transition: transform 0.4s ease;
+}
+
+
+.cesar-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cesar-intro {
+    max-width: 570px;
+}
+
+.cesar-label {
+    color: #81978D;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.cesar-intro h1 {
+    color: #172B3A;
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.12;
+    margin: 0 0 18px;
+}
+
+.cesar-intro h1 span {
+    color: #81978D;
+}
+
+.cesar-intro h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #59636A;
+    margin-bottom: 25px;
+}
+
+.cesar-intro > p:not(.cesar-label) {
+    color: #59636A;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.cesar-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #172B3A;
+    color: #FFFFFF !important;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.cesar-button:hover {
+    background: #81978D;
+    transform: translateY(-4px);
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.cesar-section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.cesar-section-heading > p {
+    color: #81978D;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.cesar-section-heading h2 {
+    color: #172B3A;
+    font-size: 38px;
+    margin: 0;
+}
+
+/* =========================================
+   ABOUT ME
+========================================= */
+
+.cesar-about {
+    padding: 100px 8%;
+    background: #FFFFFF;
+}
+
+.cesar-about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.cesar-about-content p {
+    color: #59636A;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   EDUCATION
+========================================= */
+
+.cesar-education {
+    padding: 100px 8%;
+    background: #F6F7F5;
+}
+
+.cesar-info-card {
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    background: #FFFFFF;
+    border-left: 5px solid #81978D;
+    border-radius: 10px;
+    box-shadow: 0 10px 35px rgba(23, 43, 58, 0.06);
+}
+
+.cesar-info-card h3 {
+    color: #172B3A;
+    font-size: 23px;
+    margin: 0 0 12px;
+}
+
+.cesar-info-card p {
+    color: #59636A;
+    font-size: 16px;
+}
+
+.cesar-info-card span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #81978D;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* =========================================
+   TECHNICAL SKILLS
+========================================= */
+
+.cesar-skills {
+    padding: 100px 8%;
+    background: #FFFFFF;
+}
+
+.cesar-skills-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.cesar-skill-card {
+    padding: 30px 25px;
+    background: #F6F7F5;
+    border-radius: 10px;
+    border-bottom: 4px solid #81978D;
+    transition: 0.3s ease;
+}
+
+.cesar-skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(23, 43, 58, 0.08);
+}
+
+.cesar-skill-card h3 {
+    color: #172B3A;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.cesar-skill-card p {
+    color: #59636A;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* =========================================
+   FEATURED PROJECTS
+========================================= */
+
+.cesar-projects {
+    padding: 100px 8%;
+    background: #F6F7F5;
+}
+
+.cesar-project-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cesar-project-card {
+    padding: 35px 30px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #E5EAE7;
+    transition: 0.3s ease;
+}
+
+.cesar-project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(23, 43, 58, 0.08);
+}
+
+.cesar-project-card h3 {
+    color: #172B3A;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 15px;
+}
+
+.cesar-project-card p {
+    color: #59636A;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.cesar-contact {
+    padding: 90px 8%;
+    text-align: center;
+    background: #172B3A;
+}
+
+.cesar-contact h2 {
+    color: #FFFFFF;
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 0 0 20px;
+}
+
+.cesar-contact p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #D6DEDA;
+    line-height: 1.8;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .cesar-hero-content {
+        gap: 45px;
+    }
+
+    .cesar-profile-image {
+        height: 380px;
+    }
+
+    .cesar-skills-grid,
+    .cesar-project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .cesar-hero {
+        padding: 75px 7%;
+    }
+
+    .cesar-hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 45px;
+    }
+
+    .cesar-profile-image {
+        max-width: 280px;
+        height: 330px;
+        margin: auto;
+    }
+
+    .cesar-intro {
+        margin: auto;
+    }
+
+    .cesar-about,
+    .cesar-education,
+    .cesar-skills,
+    .cesar-projects {
+        padding: 70px 7%;
+    }
+
+    .cesar-section-heading h2 {
+        font-size: 30px;
+    }
+
+    .cesar-skills-grid,
+    .cesar-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cesar-info-card {
+        padding: 28px 22px;
+    }
+
+    .cesar-contact {
+        padding: 70px 7%;
+    }
+}
+
+
+/* =========================================
+   SCROLL REVEAL ANIMATION
+========================================= */
+
+/* Initial hidden state */
+.cesar-profile-page .reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/* Visible state */
+.cesar-profile-page .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional staggered animation */
+.cesar-profile-page .reveal-delay-1 {
+    transition-delay: 0.15s;
+}
+
+.cesar-profile-page .reveal-delay-2 {
+    transition-delay: 0.3s;
+}
+
+.cesar-profile-page .reveal-delay-3 {
+    transition-delay: 0.45s;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .cesar-profile-page .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+
+
+/* =========================================
+   SOCIAL MEDIA ICONS
+========================================= */
+
+.cesar-social-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.cesar-social-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #E5EAE7;
+    color: #172B3A;
+    box-shadow: 0 5px 15px rgba(23, 43, 58, 0.08);
+    transition: all 0.3s ease;
+}
+
+.cesar-social-icon:hover {
+    transform: translateY(-6px);
+}
+
+.gmail-icon:hover {
+    background: #EA4335;
+    color: #FFFFFF;
+    border-color: #EA4335;
+}
+
+.facebook-icon:hover {
+    background: #1877F2;
+    color: #FFFFFF;
+    border-color: #1877F2;
+}
+
+/* Mobile alignment */
+@media (max-width: 650px) {
+    .cesar-social-links {
+        justify-content: center;
+    }
+}
+
+/* Instagram Icon */
+.instagram-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    transition: all 0.3s ease;
+}
+
+.instagram-icon:hover {
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+
+    border-color: transparent;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(214, 41, 118, 0.3);
+}
+
+.instagram-icon:hover svg rect,
+.instagram-icon:hover svg circle {
+    stroke: #ffffff;
+}

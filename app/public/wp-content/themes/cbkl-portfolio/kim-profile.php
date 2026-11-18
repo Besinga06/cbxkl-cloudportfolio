@@ -1,4 +1,3 @@
-
 <?php
 /*
 Template Name: Kimberly Profile
@@ -16,7 +15,7 @@ get_header();
 
             <div class="kimberly-profile-image">
                 <img
-                    src="<?php echo esc_url(get_template_directory_uri() . '/images/kimberly-profile.png'); ?>"
+                    src="<?php echo esc_url(includes_url() . '/images/jorja.jpg'); ?>"
                     alt="Kimberly Lagat">
             </div>
 
@@ -27,7 +26,7 @@ get_header();
                 </p>
 
                 <h1>
-                    Hello, I'm <span>Kimberly Lagat.</span>
+                    Hello, I'm <span>Kimberly Georgia M. Lagat.</span>
                 </h1>
 
                 <h2>Technical Writer & Documentation Specialist</h2>
@@ -41,24 +40,48 @@ get_header();
 
                 <div class="kimberly-social-links">
 
-                    <!-- EMAIL -->
-                    <a href="mailto:YOUR_EMAIL@gmail.com"
-                        class="kimberly-social-icon"
-                        aria-label="Send me an email"
-                        title="Email me">
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/YOUR_USERNAME/"
+                        class="cesar-social-icon instagram-icon"
+                        aria-label="Visit my Instagram"
+                        title="Instagram"
+                        target="_blank"
+                        rel="noopener noreferrer">
 
                         <svg viewBox="0 0 24 24" width="25" height="25"
-                            fill="none" stroke="currentColor"
-                            stroke-width="1.8" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <rect x="3" y="5" width="18" height="14" rx="2"/>
-                            <path d="m3 7 9 6 9-6"/>
+                            fill="none">
+
+                            <defs>
+                                <linearGradient id="instagramGradient"
+                                    x1="0%" y1="100%" x2="100%" y2="0%">
+
+                                    <stop offset="0%" stop-color="#feda75" />
+                                    <stop offset="25%" stop-color="#fa7e1e" />
+                                    <stop offset="50%" stop-color="#d62976" />
+                                    <stop offset="75%" stop-color="#962fbf" />
+                                    <stop offset="100%" stop-color="#4f5bd5" />
+
+                                </linearGradient>
+                            </defs>
+
+                            <rect x="3" y="3" width="18" height="18" rx="5"
+                                stroke="url(#instagramGradient)"
+                                stroke-width="2" />
+
+                            <circle cx="12" cy="12" r="4"
+                                stroke="url(#instagramGradient)"
+                                stroke-width="2" />
+
+                            <circle cx="17.5" cy="6.5" r="1"
+                                fill="#d62976" />
+
                         </svg>
 
                     </a>
 
                     <!-- FACEBOOK -->
-                    <a href="https://www.facebook.com/YOUR_USERNAME"
+                    <a href="https://www.facebook.com/kimberly.m.lagat"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="kimberly-social-icon"
@@ -67,7 +90,7 @@ get_header();
 
                         <svg viewBox="0 0 24 24" width="25" height="25"
                             fill="currentColor">
-                            <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.6V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.2v3h2.8v8h3.5z"/>
+                            <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.6V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.2v3h2.8v8h3.5z" />
                         </svg>
 
                     </a>
@@ -242,57 +265,57 @@ get_header();
 
 <!-- SCROLL ANIMATION -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
 
-    const revealElements = document.querySelectorAll(
-        ".kimberly-profile-page .kimberly-hero-content, " +
-        ".kimberly-profile-page .kimberly-section-heading, " +
-        ".kimberly-profile-page .kimberly-about-content, " +
-        ".kimberly-profile-page .kimberly-info-card, " +
-        ".kimberly-profile-page .kimberly-skill-card, " +
-        ".kimberly-profile-page .kimberly-project-card, " +
-        ".kimberly-profile-page .kimberly-contact"
-    );
+        const revealElements = document.querySelectorAll(
+            ".kimberly-profile-page .kimberly-hero-content, " +
+            ".kimberly-profile-page .kimberly-section-heading, " +
+            ".kimberly-profile-page .kimberly-about-content, " +
+            ".kimberly-profile-page .kimberly-info-card, " +
+            ".kimberly-profile-page .kimberly-skill-card, " +
+            ".kimberly-profile-page .kimberly-project-card, " +
+            ".kimberly-profile-page .kimberly-contact"
+        );
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        return;
-    }
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            return;
+        }
 
-    if ("IntersectionObserver" in window) {
+        if ("IntersectionObserver" in window) {
 
-        const observer = new IntersectionObserver(function(entries) {
+            const observer = new IntersectionObserver(function(entries) {
 
-            entries.forEach(function(entry) {
+                entries.forEach(function(entry) {
 
-                if (entry.isIntersecting) {
+                    if (entry.isIntersecting) {
 
-                    entry.target.classList.add("active");
-                    observer.unobserve(entry.target);
+                        entry.target.classList.add("active");
+                        observer.unobserve(entry.target);
 
-                }
+                    }
+
+                });
+
+            }, {
+                threshold: 0.15
+            });
+
+            revealElements.forEach(function(element) {
+
+                element.classList.add("reveal");
+                observer.observe(element);
 
             });
 
-        }, {
-            threshold: 0.15
-        });
+        } else {
 
-        revealElements.forEach(function(element) {
+            revealElements.forEach(function(element) {
+                element.classList.add("active");
+            });
 
-            element.classList.add("reveal");
-            observer.observe(element);
+        }
 
-        });
-
-    } else {
-
-        revealElements.forEach(function(element) {
-            element.classList.add("active");
-        });
-
-    }
-
-});
+    });
 </script>
 
 <?php get_footer(); ?>

@@ -466,3 +466,36 @@
         justify-content: center;
     }
 }
+
+/* Instagram Icon */
+.instagram-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    transition: all 0.3s ease;
+}
+
+.instagram-icon:hover {
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+
+    border-color: transparent;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(214, 41, 118, 0.3);
+}
+
+.instagram-icon:hover svg rect,
+.instagram-icon:hover svg circle {
+    stroke: #ffffff;
+}

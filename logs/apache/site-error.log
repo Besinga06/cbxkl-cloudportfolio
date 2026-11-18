@@ -2,3 +2,5 @@
 [Mon Nov 09 11:45:03.871450 2026] [core:error] [pid 34776:tid 1260] [client 127.0.0.1:50661] End of script output before headers: admin-ajax.php, referer: http://cloudportfolio.local/wp-admin/
 [Tue Nov 10 08:10:25.293557 2026] [fcgid:warn] [pid 24880:tid 1268] [client 127.0.0.1:53316] mod_fcgid: read timeout from pipe, referer: http://cloudportfolio.local/wp-admin/
 [Tue Nov 10 08:10:25.293557 2026] [core:error] [pid 24880:tid 1268] [client 127.0.0.1:53316] End of script output before headers: admin-ajax.php, referer: http://cloudportfolio.local/wp-admin/
+[Tue Nov 10 20:03:06.637069 2026] [fcgid:warn] [pid 36556:tid 1260] (OS 109)The pipe has been ended.  : [client 127.0.0.1:53785] mod_fcgid: get overlap result error, referer: http://cloudportfolio.org/wp-admin/tools.php
+[Tue Nov 10 20:03:06.639067 2026] [core:error] [pid 36556:tid 1260] [client 127.0.0.1:53785] End of script output before headers: plugins.php, referer: http://cloudportfolio.org/wp-admin/tools.php
