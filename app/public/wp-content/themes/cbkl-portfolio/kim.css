@@ -239,53 +239,274 @@
 }
 
 
-/* =====================================================
-   EDUCATION
-===================================================== */
+/* =========================================
+   KIMBERLY EDUCATION SECTION
+========================================= */
 
 .kimberly-education {
-    background: var(--kim-lighter);
+    padding: 100px 8%;
+    background: #F6F7F5;
 }
 
-.kimberly-info-card {
-    max-width: 750px;
+/* TIMELINE CONTAINER */
+
+.kimberly-education-timeline {
+    max-width: 850px;
     margin: auto;
-    padding: 35px;
-    text-align: center;
-    background: var(--kim-white);
-    border: 1px solid #eae3fa;
-    border-radius: 16px;
-    box-shadow: 0 12px 35px rgba(75, 54, 130, 0.07);
+    position: relative;
+}
+
+/* TIMELINE LINE */
+
+.kimberly-education-timeline::before {
+    content: "";
+    position: absolute;
+    left: 29px;
+    top: 35px;
+    bottom: 35px;
+    width: 2px;
+    background: var(--kim-text);
+    opacity: 0.25;
+}
+
+/* EDUCATION ITEM */
+
+.kimberly-education-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+/* NUMBER CIRCLE */
+
+.kimberly-education-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    background: var(--kim-text);
+    border: 5px solid #F6F7F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.kimberly-education-icon.current {
+    background: var(--kim-text);
+}
+
+/* EDUCATION CARD */
+
+.kimberly-education-card {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 30px;
+    background: #FFFFFF;
+    border-left: 4px solid var(--kim-text);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(23, 43, 58, 0.06);
     transition: all 0.3s ease;
 }
 
-.kimberly-info-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 18px 40px rgba(75, 54, 130, 0.12);
+.kimberly-education-card:hover {
+    transform: translateX(7px);
+    box-shadow: 0 15px 35px rgba(23, 43, 58, 0.10);
 }
 
-.kimberly-info-card h3 {
-    font-size: 23px;
-    color: var(--kim-primary-dark);
+/* SCHOOL LOGO */
+
+.kimberly-school-logo {
+    width: 105px;
+    height: 105px;
+    min-width: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: #F6F7F5;
+    border-radius: 12px;
+    border: 1px solid var(--kim-text);
+}
+
+.kimberly-school-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* EDUCATION INFORMATION */
+
+.kimberly-education-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.kimberly-education-level {
+    display: inline-block;
+    color: var(--kim-text);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.kimberly-education-info h3 {
+    color: var(--kim-text);
+    font-size: 21px;
+    line-height: 1.4;
+    margin: 0 0 10px;
+}
+
+.kimberly-education-info p {
+    color: var(--kim-text);
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 0 12px;
+}
+
+/* EDUCATION DATE */
+
+.kimberly-education-date {
+    display: block;
+    color: var(--kim-text);
+    opacity: 0.75;
+    font-size: 13px;
+    font-weight: 600;
     margin-bottom: 12px;
 }
 
-.kimberly-info-card p {
-    font-size: 16px;
-    color: var(--kim-text);
-    margin-bottom: 18px;
-}
+/* STATUS */
 
-.kimberly-info-card span {
-    display: inline-block;
-    padding: 9px 22px;
-    background: var(--kim-light);
-    color: var(--kim-primary-dark);
-    font-size: 13px;
+.kimberly-education-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
     font-weight: 700;
-    border-radius: 30px;
 }
 
+.kimberly-education-status.current-status {
+    color: var(--kim-text);
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.kimberly-education-status.graduated-status {
+    color: var(--kim-text);
+    background: rgba(0, 0, 0, 0.06);
+}
+
+/* STATUS DOT */
+
+.kimberly-education-status .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--kim-text);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 650px) {
+
+    .kimberly-education {
+        padding: 70px 6%;
+    }
+
+    .kimberly-education-timeline::before {
+        left: 22px;
+    }
+
+    .kimberly-education-item {
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .kimberly-education-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 13px;
+    }
+
+    .kimberly-education-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .kimberly-school-logo {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+    }
+
+    .kimberly-education-info h3 {
+        font-size: 18px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 650px) {
+
+    .kimberly-education {
+        padding: 70px 7%;
+    }
+
+    .kimberly-education-timeline::before {
+        left: 22px;
+    }
+
+    .kimberly-education-item {
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .kimberly-education-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 12px;
+    }
+
+    .kimberly-education-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 22px 18px;
+    }
+
+    .kimberly-school-logo {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+    }
+
+    .kimberly-education-info h3 {
+        font-size: 18px;
+    }
+
+}
 
 /* =====================================================
    TECHNICAL WRITING SKILLS
@@ -344,16 +565,17 @@
 }
 
 
-/* =====================================================
-   FEATURED PROJECTS
-===================================================== */
+/* =========================================
+   FEATURED PROJECTS - KIMBERLY
+========================================= */
 
 .kimberly-projects {
-    background: var(--kim-lighter);
+    padding: 100px 8%;
+    background: #F6F7F5;
 }
 
 .kimberly-project-grid {
-    max-width: 1150px;
+    max-width: 1100px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -361,32 +583,128 @@
 }
 
 .kimberly-project-card {
-    padding: 35px 30px;
-    background: var(--kim-white);
-    border-radius: 15px;
-    border-bottom: 4px solid var(--kim-primary);
-    box-shadow: 0 10px 30px rgba(75, 54, 130, 0.06);
-    transition: all 0.35s ease;
+    padding: 0;
+    overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #E5EAE7;
+    transition: 0.3s ease;
 }
 
 .kimberly-project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 40px rgba(75, 54, 130, 0.13);
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(23, 43, 58, 0.08);
 }
 
-.kimberly-project-card h3 {
+/* PROJECT IMAGE */
+
+.kimberly-project-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #E5EAE7;
+}
+
+.kimberly-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.kimberly-project-card:hover .kimberly-project-image img {
+    transform: scale(1.07);
+}
+
+/* PROJECT DETAILS */
+
+.kimberly-project-details {
+    padding: 28px;
+}
+
+.kimberly-project-category {
+    display: inline-block;
+    color: #81978D;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.kimberly-project-details h3 {
+    color: #172B3A;
     font-size: 20px;
-    line-height: 1.5;
-    color: var(--kim-primary-dark);
-    margin-bottom: 16px;
+    line-height: 1.4;
+    margin: 0 0 15px;
 }
 
-.kimberly-project-card p {
+.kimberly-project-details p {
+    color: #59636A;
     font-size: 14px;
-    line-height: 1.9;
-    color: var(--kim-text);
-    margin: 0;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
+
+/* TECHNOLOGY TAGS */
+
+.kimberly-project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.kimberly-project-tech span {
+    padding: 6px 11px;
+    background: #F0F3F0;
+    color: #59636A;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* PROJECT LINK */
+
+.kimberly-project-link {
+    display: inline-block;
+    color: #81978D;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.kimberly-project-link:hover {
+    color: #172B3A;
+    transform: translateX(5px);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+
+    .kimberly-project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .kimberly-projects {
+        padding: 70px 6%;
+    }
+
+    .kimberly-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kimberly-project-image {
+        height: 200px;
+    }
+
+}
+
 
 
 /* =====================================================
@@ -691,4 +1009,380 @@
         border-width: 6px;
         outline-width: 5px;
     }
+}
+
+
+/* =====================================================
+   KIMBERLY PROFILE - UNIFIED COLOR THEME
+   Lavender | Purple | White | Navy
+===================================================== */
+
+/* COLOR VARIABLES */
+
+.kimberly-profile-page {
+    --kim-primary: #8064c9;
+    --kim-primary-dark: #6346a8;
+
+    --kim-light: #f3efff;
+    --kim-lighter: #faf8ff;
+
+    --kim-dark: #24213b;
+    --kim-text: #66647a;
+    --kim-white: #ffffff;
+
+    --kim-border: #e7defc;
+    --kim-shadow: rgba(75, 54, 130, 0.10);
+}
+
+/* =====================================================
+   GENERAL SECTION COLORS
+===================================================== */
+
+.kimberly-profile-page {
+    background: var(--kim-white);
+    color: var(--kim-dark);
+}
+
+.kimberly-profile-page section {
+    background-color: var(--kim-white);
+}
+
+/* Alternating section backgrounds */
+
+.kimberly-about,
+.kimberly-skills {
+    background: var(--kim-white);
+}
+
+.kimberly-education,
+.kimberly-projects {
+    background: var(--kim-lighter);
+}
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+.kimberly-section-heading p {
+    color: var(--kim-primary);
+}
+
+.kimberly-section-heading h2 {
+    color: var(--kim-dark);
+}
+
+.kimberly-section-heading h2::after {
+    background: var(--kim-primary);
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.kimberly-hero {
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            #e8ddff 0,
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #faf8ff 0%,
+            #f0eaff 55%,
+            #ffffff 100%
+        );
+}
+
+.kimberly-hero::before {
+    border-color: rgba(128, 100, 201, 0.15);
+}
+
+.kimberly-profile-image {
+    border-color: var(--kim-white);
+    outline-color: var(--kim-primary);
+    box-shadow: 0 20px 45px var(--kim-shadow);
+}
+
+.kimberly-profile-image::before {
+    border-color: var(--kim-primary);
+}
+
+.kimberly-label {
+    color: var(--kim-primary);
+}
+
+.kimberly-intro h1 {
+    color: var(--kim-dark);
+}
+
+.kimberly-intro h1 span {
+    color: var(--kim-primary);
+}
+
+.kimberly-intro h2 {
+    color: var(--kim-primary-dark);
+}
+
+.kimberly-intro > p:not(.kimberly-label) {
+    color: var(--kim-text);
+}
+
+/* =====================================================
+   SOCIAL LINKS
+===================================================== */
+
+.kimberly-social-icon {
+    background: var(--kim-white);
+    color: var(--kim-primary);
+    border-color: var(--kim-border);
+}
+
+.kimberly-social-icon:hover {
+    background: var(--kim-primary);
+    color: var(--kim-white);
+    box-shadow: 0 8px 20px rgba(128, 100, 201, 0.25);
+}
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+
+.kimberly-about {
+    background: var(--kim-white);
+}
+
+.kimberly-about-content {
+    background: var(--kim-lighter);
+    border-left-color: var(--kim-primary);
+    box-shadow: 0 10px 35px var(--kim-shadow);
+}
+
+.kimberly-about-content p {
+    color: var(--kim-text);
+}
+
+/* =====================================================
+   EDUCATION SECTION
+===================================================== */
+
+.kimberly-education {
+    background: var(--kim-lighter);
+}
+
+/* Timeline line */
+
+.kimberly-education-timeline::before {
+    background: var(--kim-primary);
+    opacity: 0.35;
+}
+
+/* Timeline circles */
+
+.kimberly-education-icon {
+    background: var(--kim-primary);
+    border-color: var(--kim-lighter);
+    color: var(--kim-white);
+}
+
+.kimberly-education-icon.current {
+    background: var(--kim-primary-dark);
+}
+
+/* Education cards */
+
+.kimberly-education-card {
+    background: var(--kim-white);
+    border-left-color: var(--kim-primary);
+    box-shadow: 0 10px 30px var(--kim-shadow);
+}
+
+.kimberly-education-card:hover {
+    box-shadow: 0 15px 35px rgba(75, 54, 130, 0.15);
+}
+
+/* School logos */
+
+.kimberly-school-logo {
+    background: var(--kim-lighter);
+    border-color: var(--kim-border);
+}
+
+/* Education text */
+
+.kimberly-education-level {
+    color: var(--kim-primary);
+}
+
+.kimberly-education-info h3 {
+    color: var(--kim-dark);
+}
+
+.kimberly-education-info p {
+    color: var(--kim-text);
+}
+
+.kimberly-education-date {
+    color: var(--kim-primary-dark);
+}
+
+/* Education status */
+
+.kimberly-education-status.current-status,
+.kimberly-education-status.graduated-status {
+    color: var(--kim-primary-dark);
+    background: var(--kim-light);
+}
+
+.kimberly-education-status .status-dot {
+    background: var(--kim-primary);
+}
+
+/* =====================================================
+   SKILLS SECTION
+===================================================== */
+
+.kimberly-skills {
+    background: var(--kim-white);
+}
+
+.kimberly-skill-card {
+    background: var(--kim-lighter);
+    border-color: var(--kim-border);
+}
+
+.kimberly-skill-card::before {
+    background: var(--kim-primary);
+}
+
+.kimberly-skill-card:hover {
+    background: var(--kim-white);
+    border-color: var(--kim-primary);
+    box-shadow: 0 15px 35px var(--kim-shadow);
+}
+
+.kimberly-skill-card h3 {
+    color: var(--kim-dark);
+}
+
+.kimberly-skill-card p {
+    color: var(--kim-text);
+}
+
+/* =====================================================
+   FEATURED PROJECTS
+===================================================== */
+
+.kimberly-projects {
+    background: var(--kim-lighter);
+}
+
+.kimberly-project-card {
+    background: var(--kim-white);
+    border-color: var(--kim-border);
+}
+
+.kimberly-project-card:hover {
+    box-shadow: 0 15px 35px var(--kim-shadow);
+}
+
+/* Project image background */
+
+.kimberly-project-image {
+    background: var(--kim-light);
+}
+
+/* Project category */
+
+.kimberly-project-category {
+    color: var(--kim-primary);
+}
+
+/* Project title */
+
+.kimberly-project-details h3 {
+    color: var(--kim-dark);
+}
+
+/* Project description */
+
+.kimberly-project-details p {
+    color: var(--kim-text);
+}
+
+/* Technology tags */
+
+.kimberly-project-tech span {
+    background: var(--kim-light);
+    color: var(--kim-primary-dark);
+}
+
+/* Project links */
+
+.kimberly-project-link {
+    color: var(--kim-primary);
+}
+
+.kimberly-project-link:hover {
+    color: var(--kim-primary-dark);
+}
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.kimberly-contact {
+    background: linear-gradient(
+        135deg,
+        var(--kim-primary),
+        var(--kim-primary-dark)
+    );
+    color: var(--kim-white);
+}
+
+.kimberly-contact h2 {
+    color: var(--kim-white);
+}
+
+.kimberly-contact p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.kimberly-button {
+    background: var(--kim-white);
+    color: var(--kim-primary-dark);
+}
+
+.kimberly-button:hover {
+    background: var(--kim-dark);
+    color: var(--kim-white);
+}
+
+/* =====================================================
+   INSTAGRAM ICON
+===================================================== */
+
+.instagram-icon {
+    background: var(--kim-white);
+    border-color: var(--kim-border);
+}
+
+/* Keep the original Instagram brand gradient on hover */
+
+/* =====================================================
+   RESPONSIVE COLOR CONSISTENCY
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .kimberly-education,
+    .kimberly-projects {
+        background: var(--kim-lighter);
+    }
+
+    .kimberly-education-card,
+    .kimberly-project-card {
+        background: var(--kim-white);
+    }
+
 }

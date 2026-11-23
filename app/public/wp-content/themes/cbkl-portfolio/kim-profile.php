@@ -134,25 +134,93 @@ get_header();
     </section>
 
 
-    <!-- EDUCATION -->
+
+    <!-- EDUCATION SECTION -->
     <section class="kimberly-education">
 
         <div class="kimberly-section-heading">
-            <p>MY ACADEMIC BACKGROUND</p>
-            <h2>Education</h2>
+            <span>MY BACKGROUND</span>
+            <h2>Educational Journey</h2>
+            <p>My academic journey and educational background.</p>
         </div>
 
-        <div class="kimberly-info-card">
+        <div class="kimberly-education-timeline">
 
-            <h3>Opol Community College</h3>
+            <!-- ELEMENTARY -->
+            <div class="kimberly-education-item">
+                <div class="kimberly-education-icon">🎓</div>
+                <div class="kimberly-education-card">
+                    <img src="<?php echo get_theme_file_uri('/images/elementary-logo.png'); ?>"
+                        alt="Elementary School Logo"
+                        class="kimberly-school-logo">
+                    <div class="kimberly-education-info">
+                        <span class="kimberly-education-level">ELEMENTARY</span>
+                        <h3>Sample Elementary School</h3>
+                        <span class="kimberly-education-date">School Year: 2010–2016</span>
+                        <span class="kimberly-education-status graduated-status">
+                            <span class="status-dot"></span> Graduated
+                        </span>
+                    </div>
+                </div>
+            </div>
 
-            <p>Bachelor of Science in Information Technology</p>
+            <!-- JUNIOR HIGH SCHOOL -->
+            <div class="kimberly-education-item">
+                <div class="kimberly-education-icon">🎓</div>
+                <div class="kimberly-education-card">
+                    <img src="<?php echo get_theme_file_uri('/images/junior-high-logo.png'); ?>"
+                        alt="Junior High School Logo"
+                        class="kimberly-school-logo">
+                    <div class="kimberly-education-info">
+                        <span class="kimberly-education-level">JUNIOR HIGH SCHOOL</span>
+                        <h3>Sample National High School</h3>
+                        <span class="kimberly-education-date">School Year: 2016–2020</span>
+                        <span class="kimberly-education-status graduated-status">
+                            <span class="status-dot"></span> Graduated
+                        </span>
+                    </div>
+                </div>
+            </div>
 
-            <span>BSIT Student</span>
+            <!-- SENIOR HIGH SCHOOL -->
+            <div class="kimberly-education-item">
+                <div class="kimberly-education-icon">🎓</div>
+                <div class="kimberly-education-card">
+                    <img src="<?php echo get_theme_file_uri('/images/senior-high-logo.png'); ?>"
+                        alt="Senior High School Logo"
+                        class="kimberly-school-logo">
+                    <div class="kimberly-education-info">
+                        <span class="kimberly-education-level">SENIOR HIGH SCHOOL</span>
+                        <h3>Sample Senior High School</h3>
+                        <span class="kimberly-education-date">School Year: 2020–2022</span>
+                        <span class="kimberly-education-status graduated-status">
+                            <span class="status-dot"></span> Graduated
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLLEGE -->
+            <div class="kimberly-education-item">
+                <div class="kimberly-education-icon">🎓</div>
+                <div class="kimberly-education-card">
+                    <img src="<?php echo get_theme_file_uri('/images/occ-logo.png'); ?>"
+                        alt="Opol Community College Logo"
+                        class="kimberly-school-logo">
+                    <div class="kimberly-education-info">
+                        <span class="kimberly-education-level">COLLEGE</span>
+                        <h3>Opol Community College</h3>
+                        <span class="kimberly-education-date">Bachelor of Science in Information Technology</span>
+                        <span class="kimberly-education-status current-status">
+                            <span class="status-dot"></span> Currently Studying
+                        </span>
+                    </div>
+                </div>
+            </div>
 
         </div>
-
     </section>
+
 
 
     <!-- SKILLS -->
@@ -200,7 +268,7 @@ get_header();
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- FEATURED PROJECTS -->
     <section class="kimberly-projects">
 
         <div class="kimberly-section-heading">
@@ -210,36 +278,132 @@ get_header();
 
         <div class="kimberly-project-grid">
 
+            <!-- IOT FLOOD MONITORING -->
             <div class="kimberly-project-card">
-                <h3>IoT Flood Monitoring System</h3>
-                <p>
-                    Contributed to the technical documentation,
-                    project descriptions, research materials,
-                    and system-related documentation.
-                </p>
+
+                <div class="kimberly-project-image">
+                    <img
+                        src="PASTE_FLOOD_PROJECT_IMAGE_URL_HERE"
+                        alt="IoT Flood Monitoring System"
+                        loading="lazy">
+                </div>
+
+                <div class="kimberly-project-details">
+
+                    <span class="kimberly-project-category">
+                        TECHNICAL WRITING & RESEARCH
+                    </span>
+
+                    <h3>IoT Flood Monitoring System</h3>
+
+                    <p>
+                        Contributed to the technical documentation,
+                        research materials, related literature,
+                        project descriptions, and system documentation
+                        for an ESP32-based flood monitoring project.
+                    </p>
+
+                    <div class="kimberly-project-tech">
+                        <span>Technical Writing</span>
+                        <span>Research</span>
+                        <span>Documentation</span>
+                    </div>
+
+                    <a href="#"
+                        class="kimberly-project-link">
+                        View Research →
+                    </a>
+
+                </div>
+
             </div>
 
+
+            <!-- CB x KL PORTFOLIO -->
             <div class="kimberly-project-card">
-                <h3>CB × KL Portfolio</h3>
-                <p>
-                    Collaborated in developing a portfolio website
-                    showcasing technical writing and programming
-                    skills.
-                </p>
+
+                <div class="kimberly-project-image">
+                    <img
+                        src="PASTE_PORTFOLIO_SCREENSHOT_URL_HERE"
+                        alt="CB and KL Portfolio Website"
+                        loading="lazy">
+                </div>
+
+                <div class="kimberly-project-details">
+
+                    <span class="kimberly-project-category">
+                        WEB DEVELOPMENT & CONTENT
+                    </span>
+
+                    <h3>CB × KL Portfolio</h3>
+
+                    <p>
+                        Collaborated in developing a portfolio website
+                        by preparing written content, organizing
+                        project descriptions, and presenting the
+                        team's skills and accomplishments.
+                    </p>
+
+                    <div class="kimberly-project-tech">
+                        <span>WordPress</span>
+                        <span>Content Writing</span>
+                        <span>Documentation</span>
+                    </div>
+
+                    <a href="#"
+                        class="kimberly-project-link">
+                        View Portfolio →
+                    </a>
+
+                </div>
+
             </div>
 
+
+            <!-- ACADEMIC DOCUMENTATION -->
             <div class="kimberly-project-card">
-                <h3>Academic Documentation</h3>
-                <p>
-                    Prepared academic reports, research documents,
-                    and organized written materials for IT-related
-                    activities and projects.
-                </p>
+
+                <div class="kimberly-project-image">
+                    <img
+                        src="PASTE_DOCUMENTATION_IMAGE_URL_HERE"
+                        alt="Academic Documentation"
+                        loading="lazy">
+                </div>
+
+                <div class="kimberly-project-details">
+
+                    <span class="kimberly-project-category">
+                        ACADEMIC WRITING
+                    </span>
+
+                    <h3>Academic Documentation</h3>
+
+                    <p>
+                        Prepared and organized academic reports,
+                        research documents, project descriptions,
+                        and other written materials for
+                        information technology activities.
+                    </p>
+
+                    <div class="kimberly-project-tech">
+                        <span>MS Word</span>
+                        <span>Research Writing</span>
+                        <span>Technical Documentation</span>
+                    </div>
+
+                    <a href="#"
+                        class="kimberly-project-link">
+                        View Documentation →
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
 
     </section>
+
 
 
     <!-- CONTACT -->
